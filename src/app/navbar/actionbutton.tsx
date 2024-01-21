@@ -27,8 +27,8 @@ const actionbutton = () => {
                   <Link href="/"> Sign In</Link>
                   <Link href="/"> Sign Up</Link>
                   <Link href="/"> Services</Link>
-                  <Link href="/"> Features</Link>
-                  <Link href="/"> About Us</Link>
+                  <Link href="/cjoinus"> Career</Link>
+                  <Link href="/aboutus"> About Us</Link>
                   <Link href="/"> Contact Us</Link>
                 </div>
               </SheetDescription>
@@ -38,7 +38,7 @@ const actionbutton = () => {
       </div>
 
       <div className="hidden md:flex md:space-x-4">
-          <Button className="text-md" variant={"snbej"}>
+        <Button className="text-md" variant={"snbej"}>
           Get Started
         </Button>
       </div>

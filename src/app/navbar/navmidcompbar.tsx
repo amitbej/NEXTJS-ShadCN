@@ -18,27 +18,27 @@ import {
 
 import Logo from "./logo";
 
-const components: { title: string; href: string; description: string }[] = [
+const servicecomponents: { title: string; href: string; description: string }[] = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    title: "Web Development",
+    href: "/webdevelopemnt",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
+    title: "UI-UX Designing",
+    href: "/uiuxdesigning",
     description:
       "For sighted users to preview content available behind a link.",
   },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
+    title: "Graphics Designing",
+    href: "/graphicsdesigning",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
   {
-    title: "Scroll-area",
+    title: "Mobile Application Development",
     href: "/docs/primitives/scroll-area",
     description: "Visually or semantically separates content.",
   },
@@ -56,33 +56,28 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ];
 
-const softech: { title: string; href: string; description: string }[] = [
+const career: { title: string; href: string; description: string }[] = [
   {
-    title: "JavaScript",
-    href: "/docs/primitives/alert-dialog",
+    title: "Join Us",
+    href: "/cjoinus",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
-    title: "HTML CSS",
-    href: "/docs/htmlcss",
+    title: "Let's Intern Together",
+    href: "/cinternwithus",
     description:
       "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Node JS",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
+  },  
 ];
 const navmidcompbar = () => {
   return (
     <div>
       <NavigationMenu>
-        <NavigationMenuList>
+        <NavigationMenuList className="hidden md:flex md:space-x-4">
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+            
+            <NavigationMenuTrigger>Home</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
@@ -118,29 +113,29 @@ const navmidcompbar = () => {
             <NavigationMenuTrigger>Services</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                {components.map((component) => (
+                {servicecomponents.map((servicecomponents) => (
                   <ListItem
-                    key={component.title}
-                    title={component.title}
-                    href={component.href}
+                    key={servicecomponents.title}
+                    title={servicecomponents.title}
+                    href={servicecomponents.href}
                   >
-                    {component.description}
+                    {servicecomponents.description}
                   </ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Softwares</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Career</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                {softech.map((softech) => (
+                {career.map((career) => (
                   <ListItem
-                    key={softech.title}
-                    title={softech.title}
-                    href={softech.href}
+                    key={career.title}
+                    title={career.title}
+                    href={career.href}
                   >
-                    {softech.description}
+                    {career.description}
                   </ListItem>
                 ))}
               </ul>

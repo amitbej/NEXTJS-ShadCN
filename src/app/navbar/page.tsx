@@ -2,7 +2,7 @@ import Logo from "./logo";
 import Navmidcompbar from "./navmidcompbar";
 import Actionbutton from "./actionbutton";
 
-function navbar() {
+function Navbar() {
   return (
     <div className="flex justify-between items-center px-10 border-b">
       <Logo />
@@ -12,4 +12,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;
