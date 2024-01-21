@@ -23,7 +23,7 @@ const actionbutton = () => {
           <SheetContent>
             <SheetHeader>
               <SheetDescription>
-                <div className="flex flex-col space-y-4 items-start w-full text-lg text-black mt-10">
+                <div className="flex flex-col space-y-4 items-start w-full text-lg text-orange-400 mt-10 md:text-orange-400">
                   <Link href="/"> Sign In</Link>
                   <Link href="/"> Sign Up</Link>
                   <Link href="/"> Services</Link>
