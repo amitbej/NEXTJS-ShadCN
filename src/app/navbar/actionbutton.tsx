@@ -38,11 +38,7 @@ const actionbutton = () => {
       </div>
 
       <div className="hidden md:flex md:space-x-4">
-        <Button className="text-md" variant={"outline"}>
-          Sign In
-        </Button>
-
-        <Button className="text-md bg-blue-500" variant={"ghost"}>
+          <Button className="text-md" variant={"snbej"}>
           Get Started
         </Button>
       </div>

@@ -10,10 +10,20 @@ const firstpage = () => {
        bg-clip-text text-transparent"
         >
           {" "}
-          Build a Brand
+          Build Your Brand with Us.
         </div>
+        <p
+          className="text-lg md:text-xl md-10
+        bg-gradient-to-t
+        from-red-500
+        to-red-300
+        bg-clip-text
+        text-transparent
+        font-bold"
+        >
+          Love the Brand.
+        </p>
       </div>
-      First Section{" "}
     </section>
   );
 };
